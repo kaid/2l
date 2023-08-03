@@ -1,4 +1,6 @@
 numpy
+matplotlib
+
 jupyter
 jupyterlab
-matplotlib
+jupyterlab-lsp
