@@ -19,6 +19,9 @@ def sigmoid(x: np.ndarray) -> np.ndarray:
     return 1 / (1 + np.exp(-x))
 
 
+def softmax(x: np.ndarray) -> np.ndarray:
+    return np.exp(x) / np.sum(np.exp(x), axis=1, keepdims=True)
+
 def mse(y_true: np.ndarray, y_pred: np.ndarray) -> float:
     return np.mean((y_true - y_pred) ** 2)
 
